@@ -108,4 +108,168 @@ let mvar=956
 let mstr="85"
 console.log(mvar+ mstr)
 
-   
+
+// + is use for string concate
+// .concat also use
+
+// string functions
+// .length
+// .toLowerCase
+// .toUpperCase
+
+// indexing
+const html= "soham have"
+// console.log(html[0])
+// console.log(html.indexOf('have'))
+// console.log(html.lastIndexOf('have'))
+// console.log(html.charAt(2))
+// console.log(html.endsWith('have'))
+// console.log(html.includes('ha'))
+// console.log(html.substring(2,8))
+console.log(html.slice(0,4))
+console.log(html.split('h'))
+console.log(html.replace('have','it')) //only replace first occurence
+//  output
+// s
+// 6
+// 6
+// h
+// true
+// true
+// ham ha
+// soha
+// (3) ['so', 'am ', 'ave']
+//  soham it
+
+// template  literals
+let f="soham";
+let lo=97689548
+let myhtml=`HEllo ${f} <h1> this ${lo} my world</h1>`
+document.body.innerHTML=myhtml;
+
+//array
+const arrmix=['so',65,'ho',895,[5,9]]
+console.log(arrmix)
+
+const arrmy=new Array(23,89,'klo',[8,9])
+console.log(arrmy)
+
+console.log(arrmy.length)
+console.log(Array.isArray('89'))
+
+// modifying array
+const marksj=[4,8,9]
+marksj.push(500) // add in last
+marksj.unshift(4)//add in first
+console.log(marksj)
+marksj.pop()// delete last item
+console.log(marksj)
+marksj.shift()//delete first item
+console.log(marksj)
+
+marksj.splice(1,2) // delete item start to end
+console.log(marksj)
+marksj.reverse()
+console.log(marksj)
+
+
+//create object
+let myu={
+    name:'soham',
+    channel:'cop',
+    isactive:true
+}
+console.log(myu)
+let age=19
+// if-else statement
+if (age==19){
+    console.log('if')
+}else if(age<45){
+    console.log('else if')
+}else{
+    console.log('else')
+}
+// == only match value 
+// === check type of value also like char and num
+
+// if else in one line
+console.log(age==19?'age is 45':'age is good')
+
+age=18
+// switch case
+switch(age)
+{
+    case 19 : 
+    console.log('19')
+    break;
+    case 18 : 
+    console.log('18')
+    break;
+    default:
+    console.log('none')
+    break;
+}
+
+
+// loops// types of loops':for while do-whlie
+// 1)for loop
+for (let index = 0; index < 10; index++) {
+    // const element = array[index];
+    
+}
+let j=1
+// 2)while loop
+while (j<10) {
+    // codition
+    j++;
+}
+// 3) do while
+do {
+     // codition
+     j++; 
+} while (j<10);
+
+
+// break
+// break iterations at any number
+
+//continue
+// skip the any iteration
+
+// Foreach loop
+let array=[2,5,8,9]
+array.forEach(element => {
+    console.log(element)
+});
+
+
+
+// object 
+let obj1={
+    name:'soham',
+    rollno:7894,
+    city:'dadar'
+}
+for(let key in obj1){
+    console.log(obj1[key])
+}
+
+
+// function
+function greet(name) {
+    console.log(`${name} Birthdays come around every year, but friends like you only come once in a lifetime. I’m so glad you came into my life. Best wishes on your special day.`)
+}
+let name1='soham'
+greet(name1)
+
+// Scope
+// let and const have local scope
+// var have global scope
+
+ 
+
+// Dom : document Object model
+let a=window;
+alert('hello soham')
+console.log(a)
+a=prompt('this will destroy your computer')
