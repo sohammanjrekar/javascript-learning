@@ -57,8 +57,55 @@ console.log(arr1);
 //     a) String
 //     b) numbers
 //     c) Boolean
-//     d) null]
-//     e)undefined
+//     d) null
+//     e) undefined
 //     f) Symbol
+
 // 2) REfernse datatype -heap
-    a)
+    // a) Array
+    // myarr=[1,2,3,5,null,"string"]
+    // b) Object Literals
+// let smarks={
+//     harry:23,
+//     soham:56,
+//     govinda:58
+// }
+// console.log(typeof(smarks))
+
+    // c) Functions 
+    // function findName(){
+
+    // }
+    // d) Dates
+    // let dates= new date()
+
+// type conversion and type coercion
+let myvar // numbers to string
+myvar =  String(56)
+console.log(typeof myvar)
+
+let booleanvar=true; // boolean to string
+booleanvar =  String(booleanvar)
+console.log(typeof booleanvar)
+
+let date= String(new Date())
+console.log( typeof date)
+
+let i =8;
+console.log(i.toString()) 
+
+let str="6595";
+console.log(typeof(Number(str)))
+
+let sptr=parseInt("8596.2556");
+console.log(typeof sptr)
+
+let sptr1=parseFloat("96.2556");
+console.log(sptr1.toFixed(),typeof sptr1)
+
+
+let mvar=956
+let mstr="85"
+console.log(mvar+ mstr)
+
+   
