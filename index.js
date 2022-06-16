@@ -269,7 +269,32 @@ greet(name1)
  
 
 // Dom : document Object model
-let a=window;
-alert('hello soham')
-console.log(a)
-a=prompt('this will destroy your computer')
+// let a=window;
+let a=window.document;
+// alert('hello soham')
+// console.log(a)
+
+// a=prompt('this will destroy your computer')
+// console.log(a)
+
+// a=confirm('are you sure you want to delete this page')
+// a=window.innerHeight;
+// a=window.innerWidth;
+// a=scrollX
+// a=scrollY
+// a=location
+// a=location.href='//codewithharry.com'
+// a=location.toString()
+// a=window.history
+// a=history.go(-1)
+// a=document
+a=document.all;
+a=document.links;
+a=document.links[0].href;
+// a=document.body;
+Array.from(a).forEach(function(element) {
+    console.log(element)  
+});
+
+
+
