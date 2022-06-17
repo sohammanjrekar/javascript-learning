@@ -327,16 +327,16 @@
 
 
 // Dom traversing
-let count1=document.querySelector('.container');
-console.log(count1);
-console.log(count1.childNodes);//show text comments also
-console.log(count1.children);// show only  modules
+// let count1=document.querySelector('.container');
+// console.log(count1);
+// console.log(count1.childNodes);//show text comments also
+// console.log(count1.children);// show only  modules
 
-let nodename= count1.childNodes[0].nodeName
-console.log(nodename);
+// let nodename= count1.childNodes[0].nodeName
+// console.log(nodename);
 
-let nodetype= count1.childNodes[0].nodeType
-console.log(nodetype);
+// let nodetype= count1.childNodes[0].nodeType
+// console.log(nodetype);
 
 //node types
 /*
@@ -349,7 +349,7 @@ console.log(nodetype);
 */
 
 //traversing 
-let container=document.querySelector('div.container');
+// let container=document.querySelector('div.container');
 // console.log(container.children[1].children[0].children);
 
 
@@ -368,11 +368,31 @@ let container=document.querySelector('div.container');
 
 
 
-let element=document.createElement('li');
+// let element=document.createElement('li');
+// // add a class name to the li element
+// element.className='childul';
+// element.id='createli';
+// element.setAttribute('title','mytitle');
+// let text=document.createTextNode('i am a text node')
+// element.appendChild(text);
+// // element.innerText='hello this is created';
 
-//add a class name to the li element
-element.className='childul';
-element.id='createli';
-element.setAttribute('title','mytitle');
-let ul=document.querySelector()
-console.log(element);
+// let ul=document.querySelector('ul.this')
+// ul.appendChild(element);
+// console.log(ul)
+// console.log(element);
+
+
+let myul=document.getElementsByClassName('this');
+myul.replaceChild(myul,document.getElementById('myli'));
+myul.removeChild(document.getElementById('myli'));
+console.log('myul');
+
+/*for getting attribute
+element.getAttribute('class');
+
+for check having attribute or not
+element.hasAttribute('class');
+*/
+
+
