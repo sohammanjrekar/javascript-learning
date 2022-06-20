@@ -383,10 +383,10 @@
 // console.log(element);
 
 
-let myul=document.getElementsByClassName('this');
-myul.replaceChild(myul,document.getElementById('myli'));
-myul.removeChild(document.getElementById('myli'));
-console.log('myul');
+// let myul=document.getElementsByClassName('this');
+// myul.replaceChild(myul,document.getElementById('myli'));
+// myul.removeChild(document.getElementById('myli'));
+// console.log('myul');
 
 /*for getting attribute
 element.getAttribute('class');
@@ -397,4 +397,22 @@ element.hasAttribute('class');
 
 
 
+//events
+
+
+document.getElementById('heading').addEventListener('click',function(e){
+    console.log('you have clicked the heading');
+    let mi;
+    mi=e.target;
+    mi=e.target.className;
+    mi=e.target.classList;
+    mi=e.target.id;
+
+    mi=e.offsetX;
+    mi=e.offsetY;
+    mi=e.clientX;
+    mi=e.clientY;
+    console.log(mi);
+    // location.href='//codewithharry.com';
+});
 
