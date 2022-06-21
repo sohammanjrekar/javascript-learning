@@ -400,19 +400,44 @@ element.hasAttribute('class');
 //events
 
 
-document.getElementById('heading').addEventListener('click',function(e){
-    console.log('you have clicked the heading');
-    let mi;
-    mi=e.target;
-    mi=e.target.className;
-    mi=e.target.classList;
-    mi=e.target.id;
+// document.getElementById('heading').addEventListener('click',function(e){
+//     console.log('you have clicked the heading');
+//     let mi;
+//     mi=e.target;
+//     mi=e.target.className;
+//     mi=e.target.classList;
+//     mi=e.target.id;
 
-    mi=e.offsetX;
-    mi=e.offsetY;
-    mi=e.clientX;
-    mi=e.clientY;
-    console.log(mi);
-    // location.href='//codewithharry.com';
-});
+//     mi=e.offsetX;
+//     mi=e.offsetY;
+//     mi=e.clientX;
+//     mi=e.clientY;
+//     console.log(mi);
+//     // location.href='//codewithharry.com';
+// });
+
+// let btn=document.getElementById('btn');
+// btn.addEventListener('click',funct);
+// btn.addEventListener('dblclick',funct1);
+// btn.addEventListener('mousedown',funct2);
+// function funct(e) {
+//     console.log("thanks",e);
+//     e.preventDefault();
+// }
+// function funct1(e) {
+//     console.log("double thanks ohhyh",e);
+//     e.preventDefault();
+// }
+// function funct2(e) {
+//     console.log("mousedown",e);
+//     e.preventDefault();
+// }
+
+
+// document.querySelector('.container').addEventListener('mousemove',function(e) {
+//     console.log(e.offsetX,e.offsetY);
+//     document.body.style.backgroundColor=`rgb(${e.offsetX},${e.offsetY},${e.offsetX + e.offsetY})`;
+// });
+
+
 
