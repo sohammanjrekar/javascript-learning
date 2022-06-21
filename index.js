@@ -439,5 +439,7 @@ element.hasAttribute('class');
 //     document.body.style.backgroundColor=`rgb(${e.offsetX},${e.offsetY},${e.offsetX + e.offsetY})`;
 // });
 
-
+// localStorage.setItem('Name','jharr');
+// let name=localStorage.getItem('Name');
+// console.log(name)
 
