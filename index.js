@@ -443,3 +443,39 @@ element.hasAttribute('class');
 // let name=localStorage.getItem('Name');
 // console.log(name)
 
+
+
+
+
+// Maths in js
+let x=34;
+let y =6;
+let z;
+// z=x+y;
+// z=x-y;
+// z=x*y;
+// z=x/y;
+// z=x%y;
+
+
+
+// exploring the math object
+// z=Math;
+// z=Math.PI;
+// z=Math.E;
+// z=Math.round(5.4);
+// z=Math.ceil(5.2)
+// z=Math.floor(2.3)
+// z=Math.abs(-5.6)
+// z=Math.sqrt(4.5);
+// z=Math.pow(6,2);
+// z=Math.min(2,8,9,56,74,4,1);
+// z=Math.max(2,8,9,56,74,4,1);
+
+
+
+// random numbers generate
+// z=Math.random();
+// z=50+(100-50)*Math.random();
+// z=Math.ceil(100*Math.random());
+// console.log(z);
