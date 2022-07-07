@@ -479,3 +479,25 @@
 // z=50+(100-50)*Math.random();
 // z=Math.ceil(100*Math.random());
 // console.log(z);
+
+
+
+
+// time stamp
+// let today=new Date();
+// console.log(typeof(today));
+// let otherdate=new Date('8-14-2001 04:54:08');
+// console.log(otherdate);
+// let a=otherdate.getDay();
+// a=otherdate.getDate();
+// a=otherdate.getMonth();
+// a=otherdate.getMinutes();
+// a=otherdate.getHours();
+// a=otherdate.getSeconds();
+// a=otherdate.getTime();
+// a=otherdate.setDate(23);
+// a=otherdate.setMonth(2);
+// a=otherdate.setFullYear(2010);
+// a=otherdate.setMinutes(20);
+
+// console.log(otherdate);
