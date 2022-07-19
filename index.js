@@ -529,3 +529,20 @@ function GeneralCar(givenname,givenspeed){
 }
 car1=new GeneralCar('Nissan',450)
 console.log(car1);
+
+
+//object literal: Object.Prototype
+let obj={
+    name:"harry",
+    channel:"code with harry",
+    address:"mars"
+}
+
+function Obj(givenname) {
+    this.name=givenname
+}
+Obj.prototype.getName= function(){
+    return this.name;
+}
+let obj2=new Obj("Rohan Das");
+console.log(obj2);
