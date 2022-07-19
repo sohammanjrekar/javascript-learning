@@ -615,7 +615,16 @@
 
 //Ajax : Asynchronous javaascript and xml
 
-
+let fetchbtn=document.getElementById("fetchbtn");
+fetchbtn.addEventListener('click',buttonclick)
+function buttonclick() {
+    console.log("you are click")
+    //instantiate an xhr object
+    const xhr= new XMLHttpRequest();
+    
+    //open the object
+    xhr.open('GET','harry.txt',true);//true for asynchronous
+}
 
 
 
