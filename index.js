@@ -518,3 +518,14 @@ let car={
     //     console.log("car is running");
     // }
 }
+
+// creating a constructor for cars
+function GeneralCar(givenname,givenspeed){
+    this.name=givenname;
+    this.topspeed=givenspeed;
+    this.run =function () {
+        console.log(`$(this.name) is running `)
+    }
+}
+car1=new GeneralCar('Nissan',450)
+console.log(car1);
