@@ -602,14 +602,18 @@
 //in a synchronous programming model things happen one at time
 
 // Asynchoronous programming
-    setTimeout(() => {
-        for (let index = 0; index < 40; index++) {
-            const element = index;
-            console.log("this is index"+index)
-        }
-    }, 100);
+//     setTimeout(() => {
+//         for (let index = 0; index < 40; index++) {
+//             const element = index;
+//             console.log("this is index"+index)
+//         }
+//     }, 100);
 
-console.log('done printing')
+// console.log('done printing')
+
+
+//Ajax : Asynchronous javaascript and xml
+
 
 
 
