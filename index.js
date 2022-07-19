@@ -580,13 +580,19 @@ class Employee{
 class Programmer extends Employee{
     constructor(givenname,givenexperience,givendivision,language){
         super(givenname,givenexperience,givendivision);
-        
+        this.language=language;
     }
 }
 
 soham= new Employee("harry",2,"D");
 console.log(soham.slogan())
 console.log(Employee.add(45,5))
+soham2 = new Programmer("harry",2,"D","python");
+console.log(soham2)
+
+
+
+
 
 
 
