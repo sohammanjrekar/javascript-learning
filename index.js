@@ -547,21 +547,31 @@
 // let obj2=new Obj("Rohan Das");
 // console.log(obj2);
 
-const proto={
-    slogan:function () {
-        return `this comp`;
-    },
-    changeName: function () {
-        this.name=newName
+// const proto={
+//     slogan:function () {
+//         return `this comp`;
+//     },
+//     changeName: function () {
+//         this.name=newName
+//     }
+// }
+
+// const harry=Object.create(proto);
+// harry.name="harry";
+// harry.role="programmer";
+// console.log(harry)
+
+
+//Class
+class Employee{
+    constructor(givenname,givenexperience,givendivision){
+        this.name=givenname;
+        this.experience=givenexperience;
+        this.division=givendivision;
     }
 }
-
-const harry=Object.create(proto);
-harry.name="harry";
-harry.role="programmer";
-console.log(harry)
-
-
+soham= new Employee("harry",2,"D");
+console.log(soham)
 
 
 
