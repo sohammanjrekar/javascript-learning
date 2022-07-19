@@ -563,36 +563,53 @@
 
 
 //Class
-class Employee{
-    constructor(givenname,givenexperience,givendivision){
-        this.name=givenname;
-        this.experience=givenexperience;
-        this.division=givendivision;
-    }
-    slogan(){
-        return `i am ${this.name}`;
-    }
-    static add(a,b){
-        return a+b;
-    }
-}
+// class Employee{
+//     constructor(givenname,givenexperience,givendivision){
+//         this.name=givenname;
+//         this.experience=givenexperience;
+//         this.division=givendivision;
+//     }
+//     slogan(){
+//         return `i am ${this.name}`;
+//     }
+//     static add(a,b){
+//         return a+b;
+//     }
+// }
 
-class Programmer extends Employee{
-    constructor(givenname,givenexperience,givendivision,language){
-        super(givenname,givenexperience,givendivision);
-        this.language=language;
-    }
-}
+// class Programmer extends Employee{
+//     constructor(givenname,givenexperience,givendivision,language){
+//         super(givenname,givenexperience,givendivision);
+//         this.language=language;
+//     }
+// }
 
-soham= new Employee("harry",2,"D");
-console.log(soham.slogan())
-console.log(Employee.add(45,5))
-soham2 = new Programmer("harry",2,"D","python");
-console.log(soham2)
-
-
+// soham= new Employee("harry",2,"D");
+// console.log(soham.slogan())
+// console.log(Employee.add(45,5))
+// soham2 = new Programmer("harry",2,"D","python");
+// console.log(soham2)
 
 
+
+//Synchronous vs asynchronous programming
+// An asynchronous model allows multiple things to happen at the same time
+//few ways of asynchronous
+//1. Async/await
+//2. callbacks
+//3.promises
+
+//in a synchronous programming model things happen one at time
+
+// Asynchoronous programming
+    setTimeout(() => {
+        for (let index = 0; index < 40; index++) {
+            const element = index;
+            console.log("this is index"+index)
+        }
+    }, 100);
+
+console.log('done printing')
 
 
 
