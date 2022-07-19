@@ -569,11 +569,24 @@ class Employee{
         this.experience=givenexperience;
         this.division=givendivision;
     }
+    slogan(){
+        return `i am ${this.name}`;
+    }
+    static add(a,b){
+        return a+b;
+    }
 }
+
+class Programmer extends Employee{
+    constructor(givenname,givenexperience,givendivision,language){
+        super(givenname,givenexperience,givendivision);
+        
+    }
+}
+
 soham= new Employee("harry",2,"D");
-console.log(soham)
-
-
+console.log(soham.slogan())
+console.log(Employee.add(45,5))
 
 
 
