@@ -507,42 +507,66 @@
 
 
 //object literal for creating objects
-let car={
-    name:'Maruti 800',
-    topspeed:89,
-    run: function() {
-        console.log("car is running");
-    }
-    // Also use
-    // run: () => {
-    //     console.log("car is running");
+// let car={
+//     name:'Maruti 800',
+//     topspeed:89,
+//     run: function() {
+//         console.log("car is running");
+//     }
+     // Also use
+     // run: () => {
+     //     console.log("car is running");
     // }
-}
+// }
 
 // creating a constructor for cars
-function GeneralCar(givenname,givenspeed){
-    this.name=givenname;
-    this.topspeed=givenspeed;
-    this.run =function () {
-        console.log(`$(this.name) is running `)
-    }
-}
-car1=new GeneralCar('Nissan',450)
-console.log(car1);
+// function GeneralCar(givenname,givenspeed){
+//     this.name=givenname;
+//     this.topspeed=givenspeed;
+//     this.run =function () {
+//         console.log(`$(this.name) is running `)
+//     }
+// }
+// car1=new GeneralCar('Nissan',450)
+// console.log(car1);
 
 
 //object literal: Object.Prototype
-let obj={
-    name:"harry",
-    channel:"code with harry",
-    address:"mars"
+// let obj={
+//     name:"harry",
+//     channel:"code with harry",
+//     address:"mars"
+// }
+
+// function Obj(givenname) {
+//     this.name=givenname
+// }
+// Obj.prototype.getName= function(){
+//     return this.name;
+// }
+// let obj2=new Obj("Rohan Das");
+// console.log(obj2);
+
+const proto={
+    slogan:function () {
+        return `this comp`;
+    },
+    changeName: function () {
+        this.name=newName
+    }
 }
 
-function Obj(givenname) {
-    this.name=givenname
-}
-Obj.prototype.getName= function(){
-    return this.name;
-}
-let obj2=new Obj("Rohan Das");
-console.log(obj2);
+const harry=Object.create(proto);
+harry.name="harry";
+harry.role="programmer";
+console.log(harry)
+
+
+
+
+
+
+
+
+
+
