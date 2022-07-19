@@ -501,3 +501,20 @@
 // a=otherdate.setMinutes(20);
 
 // console.log(otherdate);
+
+
+// OOPs
+
+
+//object literal for creating objects
+let car={
+    name:'Maruti 800',
+    topspeed:89,
+    run: function() {
+        console.log("car is running");
+    }
+    // Also use
+    // run: () => {
+    //     console.log("car is running");
+    // }
+}
