@@ -624,6 +624,16 @@ function buttonclick() {
     
     //open the object
     xhr.open('GET','harry.txt',true);//true for asynchronous
+
+    //what to do on process(optional)
+    xhr.onprogress=function () {
+        console.log("on process")
+    }
+
+    //what to do when response is ready
+    xhr.onload=function () {
+        console.log(this.responseText)
+    }
 }
 
 
