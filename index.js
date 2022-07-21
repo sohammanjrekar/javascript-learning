@@ -623,7 +623,7 @@ function buttonclick() {
     const xhr= new XMLHttpRequest();
     
     //open the object
-    xhr.open('GET','harry.txt',true);//true for asynchronous
+    xhr.open('GET','harry2.txt',true);//true for asynchronous
 
     //what to do on process(optional)
     xhr.onprogress=function () {
@@ -632,8 +632,20 @@ function buttonclick() {
 
     //what to do when response is ready
     xhr.onload=function () {
-        console.log(this.responseText)
+        // 200 status means ok everything
+        if(this.status===200){
+            console.log(this.responseText)
+        }
+        else{
+            console.error("error")
+        }
     }
+
+    // send  the request
+    xhr.send();
+
+
+
 }
 
 
