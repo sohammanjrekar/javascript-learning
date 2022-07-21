@@ -655,38 +655,50 @@
 
 
 //for information take from internet
-let popbtn=document.getElementById("backupbtn");
-popbtn.addEventListener('click',pophandler)
-function pophandler() {
-    console.log("you are click")
-    //instantiate an xhr object
-    const xhr= new XMLHttpRequest();
+// let popbtn=document.getElementById("backupbtn");
+// popbtn.addEventListener('click',pophandler)
+// function pophandler() {
+//     console.log("you are click")
+//     //instantiate an xhr object
+//     const xhr= new XMLHttpRequest();
     
-    //open the object
-    xhr.open('GET','http://dummy.restapiexample.com/api/v1/employees',true);//true for asynchronous
+//     //open the object
+//     xhr.open('GET','http://dummy.restapiexample.com/api/v1/employees',true);//true for asynchronous
 
     
-    //what to do when response is ready
-    xhr.onload=function () {
-        // 200 status means ok everything
-        if(this.status===200){
-            let obj=JSON.parse(this.responseText);
-            console.log(obj);
-            let main= document.getElementById("main1");
-            str="";
-            for(key in obj)
-            {
-                str += `<li>${obj[key]}</li>`;
-            }
-            main.innerHTML = str;
-        }
-        else{
-            console.error("error")
-        }
-    }
+//     //what to do when response is ready
+//     xhr.onload=function () {
+//         // 200 status means ok everything
+//         if(this.status===200){
+//             let obj=JSON.parse(this.responseText);
+//             console.log(obj);
+//             let main= document.getElementById("main1");
+//             str="";
+//             for(key in obj)
+//             {
+//                 str += `<li>${obj[key]}</li>`;
+//             }
+//             main.innerHTML = str;
+//         }
+//         else{
+//             console.error("error")
+//         }
+//     }
 
-    // send  the request
+//     // send  the request
     
-    xhr.send();
+//     xhr.send();
 
+// }
+
+//callback function
+//pretend that this response is coming from the server
+const stundents =[
+    {name:"harry",subject:"javascript"},
+    {name:"soham",subject:"python"},
+]
+function enroll(stundent){
+    setTimeout(function(){
+        stundents.push(stundent)
+    },3000);
 }
