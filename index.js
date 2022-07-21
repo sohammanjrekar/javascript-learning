@@ -615,26 +615,70 @@
 
 //Ajax : Asynchronous javaascript and xml
 
-let fetchbtn=document.getElementById("fetchbtn");
-fetchbtn.addEventListener('click',buttonclick)
-function buttonclick() {
+
+///for information send
+// let fetchbtn=document.getElementById("fetchbtn");
+// fetchbtn.addEventListener('click',buttonclick)
+// function buttonclick() {
+//     console.log("you are click")
+//     //instantiate an xhr object
+//     const xhr= new XMLHttpRequest();
+    
+//     //open the object
+//     // xhr.open('GET','harry2.txt',true);//true for asynchronous
+
+
+//     //use post request 
+//     xhr.open('POST','http://dummy.restapiexample.com/api/v1/create',true);
+//     xhr.getResponseHeader('content-type','application/json')
+
+//     //what to do on process(optional)
+//     xhr.onprogress=function () {
+//         console.log("on process")
+//     }
+
+//     //what to do when response is ready
+//     xhr.onload=function () {
+//         // 200 status means ok everything
+//         if(this.status===200){
+//             console.log(this.responseText)
+//         }
+//         else{
+//             console.error("error")
+//         }
+//     }
+
+//     // send  the request
+//     params=`{"name":"test11","salary":"123","age":"23"}`;
+//     xhr.send(params);
+// }
+
+
+//for information take from internet
+let popbtn=document.getElementById("backupbtn");
+popbtn.addEventListener('click',pophandler)
+function pophandler() {
     console.log("you are click")
     //instantiate an xhr object
     const xhr= new XMLHttpRequest();
     
     //open the object
-    xhr.open('GET','harry2.txt',true);//true for asynchronous
+    xhr.open('GET','http://dummy.restapiexample.com/api/v1/employees',true);//true for asynchronous
 
-    //what to do on process(optional)
-    xhr.onprogress=function () {
-        console.log("on process")
-    }
-
+    
     //what to do when response is ready
     xhr.onload=function () {
         // 200 status means ok everything
         if(this.status===200){
-            console.log(this.responseText)
+            let obj=JSON.parse(this.responseText);
+            console.log(obj);
+            let main= document.getElementById("main1");
+            str="";
+            for(key in obj)
+            {
+                str += `<li>${obj[key]}</li>`;
+            }
+            main.innerHTML = str;
         }
         else{
             console.error("error")
@@ -642,13 +686,7 @@ function buttonclick() {
     }
 
     // send  the request
+    
     xhr.send();
 
-
-
 }
-
-
-
-
-
