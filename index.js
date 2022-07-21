@@ -691,14 +691,20 @@
 
 // }
 
-//callback function
+
+
+//callback function: function ke andar function call karna
 //pretend that this response is coming from the server
-const stundents =[
-    {name:"harry",subject:"javascript"},
-    {name:"soham",subject:"python"},
-]
-function enroll(stundent){
-    setTimeout(function(){
-        stundents.push(stundent)
-    },3000);
-}
+// const stundents =[
+//     {name:"harry",subject:"javascript"},
+//     {name:"soham",subject:"python"},
+// ]
+// function enroll(stundent,callm()){
+//     setTimeout(function(){
+//         stundents.push(stundent);
+// callm();
+//     },3000);
+// }
+
+
+//promise
