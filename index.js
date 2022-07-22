@@ -843,4 +843,22 @@
 
 //regular expression
 let reg=/harry/; //this is a regular expression literal in js
-console.log(reg)
+// g -global flag
+//i- case sensitive
+console.log(reg);
+console.log(reg.source);
+
+let s="this is great code with harry";
+// Functions to match expression
+// 1) exec() - This function will return an array for match or null for no match
+// let result=reg.exec(s)
+// console.log(result)
+// console.log(result.index)
+// console.log(result.input)
+
+
+// 2) test() - Returns true or false
+let result=reg.test(s)
+console.log(result)
+// console.log(result.index)
+// console.log(result.input)
