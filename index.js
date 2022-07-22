@@ -818,4 +818,20 @@
 // a.then(data=>console.log(data))
 
 
-//
+//Error handling
+
+//pretent this is coming from a server as response
+let a="soham bhai";
+// a=undefined;
+if(a!=undefined){
+    throw new Error('this is not undefined');
+    console.log('this not undefined');
+}else{
+    console.log('this undefined')
+}
+
+try {
+    
+} catch (error) {
+    
+}
