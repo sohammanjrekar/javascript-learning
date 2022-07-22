@@ -761,3 +761,44 @@
 
 
 
+// fetch data 
+//button with id fetchall
+// let mybtn=document.getElementById("fetchall");
+
+// //div with id content
+// let content =document.getElementById("content");
+
+// function getdata(){
+//     console.log("start")
+//     url="harry.txt";
+//     fetch(url).then((response)=>{
+//         console.log("inside first then")
+//         return response.text();
+//     }).then((data)=>{
+//         console.log("inside second then")
+//         console.log(data);
+//     })
+// }
+// console.log("before get data")
+// getdata();
+// console.log("after get data");
+
+
+
+
+
+//post data 
+function postdata(){
+    url="http://dummy.restapiexample.com/api/v1/create";
+    data ={"name":"soham456","salary":"123","age":"45"}
+    params={
+        method:'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:data
+    }
+    fetch(url, params).then(response=>response.json()).then(data=>
+        console.log(data))
+}
+postdata()
