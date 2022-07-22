@@ -788,17 +788,29 @@
 
 
 //post data 
-function postdata(){
-    url="http://dummy.restapiexample.com/api/v1/create";
-    data ={"name":"soham456","salary":"123","age":"45"}
-    params={
-        method:'POST',
-        headers:{
-            'Content-Type': 'application/json'
-        },
-        body:data
-    }
-    fetch(url, params).then(response=>response.json()).then(data=>
-        console.log(data))
+// function postdata(){
+//     url="http://dummy.restapiexample.com/api/v1/create";
+//     data ={"name":"soham456","salary":"123","age":"45"}
+//     params={
+//         method:'POST',
+//         headers:{
+//             'Content-Type': 'application/json'
+//         },
+//         body:data
+//     }
+//     fetch(url, params).then(response=>response.json()).then(data=>
+//         console.log(data))
+// }
+// postdata()
+
+
+
+
+//await / async
+async function harry(){
+    return "harry";
+
 }
-postdata()
+let a= harry();
+console.log(a);
+
