@@ -844,11 +844,11 @@
 //regular expression
 let reg=/harry/; //this is a regular expression literal in js
 // g -global flag
-//i- case sensitive
+//i- case insensitive
 console.log(reg);
 console.log(reg.source);
 
-let s="this is great code with harry";
+let s="this is great code with harry snd harry";
 // Functions to match expression
 // 1) exec() - This function will return an array for match or null for no match
 // let result=reg.exec(s)
@@ -858,7 +858,19 @@ let s="this is great code with harry";
 
 
 // 2) test() - Returns true or false
-let result=reg.test(s)
-console.log(result)
-// console.log(result.index)
-// console.log(result.input)
+// let result=reg.test(s)
+// console.log(result)
+
+// 3) match()- it will return an array of results or null
+// let result=reg.match(s)--this is wrong
+//  let result=s.match(reg)//--this is right
+// console.log(result)
+
+//4) search()- Returns index of first match else -1
+// let result=reg.search(s)--this is wrong
+//  let result=s.search(reg)//--this is right
+// console.log(result)
+
+// 5) replace()- Returns new replaced string with all the replacements
+//  let result=s.replace(reg,'soham')//--this is right
+// console.log(result)
