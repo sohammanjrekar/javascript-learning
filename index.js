@@ -821,17 +821,21 @@
 //Error handling
 
 //pretent this is coming from a server as response
-let a="soham bhai";
-// a=undefined;
-if(a!=undefined){
-    throw new Error('this is not undefined');
-    console.log('this not undefined');
-}else{
-    console.log('this undefined')
-}
+// let a="soham bhai";
+// // a=undefined;
+// if(a!=undefined){
+//     throw new Error('this is not undefined');
+//     console.log('this not undefined');
+// }else{
+//     console.log('this undefined')
+// }
 
-try {
-    
-} catch (error) {
-    
-}
+// try {
+//     console.log(soham);
+// } catch (error) {
+//     console.log("are you okay");
+//     console.log(error);
+//     console.log(error.name)
+// }finally{
+//     console.log("finally run")
+// }
