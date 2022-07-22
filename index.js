@@ -707,4 +707,25 @@
 // }
 
 
-//promise
+//promise : resolve or reject or pending
+function func1() {
+    return new Promise(function(resolve,reject){
+        setTimeout(() => {
+            const error=true;
+            if (!error) {
+                console.log('your promise has been resolved')
+                resolve();
+            }
+            else{
+                console.log('your promise has not been resolved')
+                reject('sorry')
+            }
+
+        }, 2000);
+    })
+}
+func1().then(function(){
+    console.log("harry: thanks")
+}).catch(function(error){
+    console.log("harry: bad bro "+error)
+})
