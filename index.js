@@ -708,24 +708,27 @@
 
 
 //promise : resolve or reject or pending
-function func1() {
-    return new Promise(function(resolve,reject){
-        setTimeout(() => {
-            const error=true;
-            if (!error) {
-                console.log('your promise has been resolved')
-                resolve();
-            }
-            else{
-                console.log('your promise has not been resolved')
-                reject('sorry')
-            }
+// function func1() {
+//     return new Promise(function(resolve,reject){
+//         setTimeout(() => {
+//             const error=true;
+//             if (!error) {
+//                 console.log('your promise has been resolved')
+//                 resolve();
+//             }
+//             else{
+//                 console.log('your promise has not been resolved')
+//                 reject('sorry')
+//             }
 
-        }, 2000);
-    })
-}
-func1().then(function(){
-    console.log("harry: thanks")
-}).catch(function(error){
-    console.log("harry: bad bro "+error)
-})
+//         }, 2000);
+//     })
+// }
+// func1().then(function(){
+//     console.log("harry: thanks")
+// }).catch(function(error){
+//     console.log("harry: bad bro "+ error)
+// })
+
+//fuction inside then is run as -resolve()
+// fuction inside catch is run as -reject()
