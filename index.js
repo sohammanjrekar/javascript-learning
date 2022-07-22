@@ -732,3 +732,32 @@
 
 //fuction inside then is run as -resolve()
 // fuction inside catch is run as -reject()
+
+
+
+//Arrow function
+
+//creating a regular function
+//const harry=function(){
+// console.log("this is the best");
+// }
+
+//creating it to an arrow function
+//const harry=()=>{
+// console.log("this is the best");
+// }
+
+
+//one liner donot require braces
+// const greet=()=>"good bro";
+// console.log(greet())
+
+//single parameters do not need parenthesis but you will have to put parenthesis if there are multiple parameters
+// const greet=name=>"good bro "+name;
+
+
+// const greet=(name,n)=>"good bro "+name+" "+n;
+// console.log(greet('soham',12))
+
+
+
