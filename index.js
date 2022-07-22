@@ -839,3 +839,8 @@
 // }finally{
 //     console.log("finally run")
 // }
+
+
+//regular expression
+let reg=/harry/; //this is a regular expression literal in js
+console.log(reg)
