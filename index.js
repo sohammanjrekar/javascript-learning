@@ -884,7 +884,8 @@ let s="this is great code with harry snd harry";
 // reg=/h\*ry/;// matches * as character
 
 // reg=/h[a-z]ry/;// matches all characters to a to z
-// reg=/h[avz]ry/;// matches by given all characters 
+// reg=/h[avz]ry/;// matches by given all characters
+// reg=/h[^avz]ry/;// not matches by given all characters others are ok
 // regex use
 let result=reg.exec(s);
 console.log('the result from exec is',result);
