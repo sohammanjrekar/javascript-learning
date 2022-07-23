@@ -894,8 +894,11 @@ let s="this is great code with harry snd harry";
 
 
 //quatifiers: decide the repetation of character
-reg=/har{2}y/
+reg=/har{2}y/ //{n} means n time repetations
+reg=/har{0,2}y/ // means 0 to n time repetations
 
+//grouping - we use paranthesis for groupings ()
+reg=/(har){2}/
 // regex use
 let result=reg.exec(s);
 console.log('the result from exec is',result);
