@@ -874,3 +874,27 @@ let s="this is great code with harry snd harry";
 // 5) replace()- Returns new replaced string with all the replacements
 //  let result=s.replace(reg,'soham')//--this is right
 // console.log(result)
+
+
+// reg="/^harry/";//^ means expression will match if string starts with
+// reg=/rry$/; // $  at the end  of the string means "string ends with"
+// reg=/h.rry/;// matches any one character
+// reg=/h.ry/;// matches any one character
+// reg=/ha?rryi?/;// ? after character means that character is optioal
+// reg=/h\*ry/;// matches * as character
+
+// reg=/h[a-z]ry/;// matches all characters to a to z
+// reg=/h[avz]ry/;// matches by given all characters 
+// regex use
+let result=reg.exec(s);
+console.log('the result from exec is',result);
+if(reg.test(s)){
+    console.log(`the string ${s} matches the expression ${reg.source}`);
+}else{
+    console.log(`the string ${s} does not matches the expression ${reg.source}`)
+}
+
+//regualar Expression :
+//basic functions
+//Metacharater Symbols
+//Character Sets
