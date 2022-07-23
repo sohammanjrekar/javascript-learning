@@ -842,6 +842,11 @@
 
 
 //regular expression
+//regualar Expression :
+//basic functions
+//Metacharater Symbols
+//Character Sets  : []
+
 let reg=/harry/; //this is a regular expression literal in js
 // g -global flag
 //i- case insensitive
@@ -886,6 +891,11 @@ let s="this is great code with harry snd harry";
 // reg=/h[a-z]ry/;// matches all characters to a to z
 // reg=/h[avz]ry/;// matches by given all characters
 // reg=/h[^avz]ry/;// not matches by given all characters others are ok
+
+
+//quatifiers: decide the repetation of character
+reg=/har{2}y/
+
 // regex use
 let result=reg.exec(s);
 console.log('the result from exec is',result);
@@ -895,7 +905,6 @@ if(reg.test(s)){
     console.log(`the string ${s} does not matches the expression ${reg.source}`)
 }
 
-//regualar Expression :
-//basic functions
-//Metacharater Symbols
-//Character Sets
+
+
+
