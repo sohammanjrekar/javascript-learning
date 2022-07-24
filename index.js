@@ -1016,19 +1016,19 @@ let s="this is great code with harry snd harry";
 
 //Maps in javascript : we can use any type of key or value
 
-const myMap= new Map();
-console.log(myMap);
-const key1='mystr',key2={},key3=function(){}
+// const myMap= new Map();
+// console.log(myMap);
+// const key1='mystr',key2={},key3=function(){}
 
-//setting map values
-myMap.set(key1,'this is a string');
-myMap.set(key2,'this is a word');
-myMap.set(key3,'this is a char');
-console.log(myMap);
+// //setting map values
+// myMap.set(key1,'this is a string');
+// myMap.set(key2,'this is a word');
+// myMap.set(key3,'this is a char');
+// console.log(myMap);
 
-//getting the values from a Map
-let value1=myMap.get(key1);
-console.log(value1);
+// //getting the values from a Map
+// let value1=myMap.get(key1);
+// console.log(value1);
 
 // //get the size of the map
 // console.log(myMap.size);
@@ -1054,14 +1054,14 @@ console.log(value1);
 // })
 
 //converting map to an array
-let myArray=Array.from(myMap);
-console.log('array is',myArray);
+// let myArray=Array.from(myMap);
+// console.log('array is',myArray);
 
 
-//converting map keys to an array
-let mykeyArray=Array.from(myMap.keys());
-console.log('array is',mykeyArray);
+// //converting map keys to an array
+// let mykeyArray=Array.from(myMap.keys());
+// console.log('array is',mykeyArray);
 
-//converting map values to an array
-let myvaluesArray=Array.from(myMap.values());
-console.log('array is',myvaluesArray);
+// //converting map values to an array
+// let myvaluesArray=Array.from(myMap.values());
+// console.log('array is',myvaluesArray);
