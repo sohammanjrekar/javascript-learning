@@ -904,6 +904,18 @@ let s="this is great code with harry snd harry";
 
 // character classes
  reg =/\war/; //word character - _or alphabet or numbers
+ reg =/\w+ar/; //\w+ means one or more word characters
+ reg =/\Wharry/; // Capital W means no wor character
+ reg =/\W+ar/; //\W+ means more than one non word characters
+ reg=/number \d999/; //d means digit
+ reg=/number \d+/; //d+ means more than one digit
+ reg=/\D999/; //D means non digit
+ reg=/\D+999/; //D+ means more than one non digit
+ reg=/\ska number/; //Match whitespace character
+ reg=/\s+ka number/; //Match one or more than one non whitespace character
+ reg=/4r5r\b/; // Word boundary
+ reg=/\h(?=y)/; //when y comes after h match found
+ reg=/\h(?!y)/; //when y not comes after h match found
 
 // regex use
 let result=reg.exec(s);
