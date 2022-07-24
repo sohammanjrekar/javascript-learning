@@ -1,3 +1,6 @@
+// JAvascript course notes and code
+
+
 // // alert('this')
 // console.time('my')
 // console.log('hello');
