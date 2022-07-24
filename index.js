@@ -1120,34 +1120,34 @@ let s="this is great code with harry snd harry";
 
 
 //Destructuring in js
-let a,b;
-[a,b]=[34,564];
-console.log(a,b);
+// let a,b;
+// [a,b]=[34,564];
+// console.log(a,b);
 
-[a,b,c,...d]=[1,2,3,4,5,6,7,8,9]
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
+// [a,b,c,...d]=[1,2,3,4,5,6,7,8,9]
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
 
-// Array Destucturing
-({a,b,c,...d}={a:34,b:45,c:78,d:45,e:65})
-console.log(a,b,c,d);
+// // Array Destucturing
+// ({a,b,c,...d}={a:34,b:45,c:78,d:45,e:65})
+// console.log(a,b,c,d);
 
-const fruits=['apple','mango'];
-[a,b]=fruits;
-console.log(a);
-console.log(b);
+// const fruits=['apple','mango'];
+// [a,b]=fruits;
+// console.log(a);
+// console.log(b);
 
-//object Destructing
-laptop={
-    model:"hp",
-    age:45,
-    gender:"male",
-    Start : function(){console.log('hii');}
-}
-const{model,age,gender}=laptop;
-console.log(model,age,gender)
+// //object Destructing
+// laptop={
+//     model:"hp",
+//     age:45,
+//     gender:"male",
+//     Start : function(){console.log('hii');}
+// }
+// const{model,age,gender}=laptop;
+// console.log(model,age,gender)
 
 
 
