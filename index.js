@@ -1081,5 +1081,28 @@ myset.add(true);
 console.log('the set is',myset);
 
 // in line one all
-let myset2=new Set([1,45,'ao',true,{a:45,b:78},1])//repeat things not count
-console.log('the set2 is',myset2);
+// let myset2=new Set([1,45,'ao',true,{a:45,b:78},1])//repeat things not count
+// console.log('the set2 is',myset2);
+
+// size
+// console.log('the set size',myset.size);
+
+// //check values are availableor not in set 
+// console.log(myset.has(25));
+
+// myset.delete('this')
+// console.log(myset);
+
+
+//iterating a set
+// for(let item of myset){
+//     console.log('the item is',item);
+// }
+
+
+myset.forEach((item)=>{
+    console.log('the item is',item);
+})
+
+
+
