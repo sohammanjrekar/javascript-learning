@@ -903,29 +903,79 @@ let s="this is great code with harry snd harry";
 
 
 // character classes
- reg =/\war/; //word character - _or alphabet or numbers
- reg =/\w+ar/; //\w+ means one or more word characters
- reg =/\Wharry/; // Capital W means no wor character
- reg =/\W+ar/; //\W+ means more than one non word characters
- reg=/number \d999/; //d means digit
- reg=/number \d+/; //d+ means more than one digit
- reg=/\D999/; //D means non digit
- reg=/\D+999/; //D+ means more than one non digit
- reg=/\ska number/; //Match whitespace character
- reg=/\s+ka number/; //Match one or more than one non whitespace character
- reg=/4r5r\b/; // Word boundary
- reg=/\h(?=y)/; //when y comes after h match found
- reg=/\h(?!y)/; //when y not comes after h match found
+//  reg =/\war/; //word character - _or alphabet or numbers
+//  reg =/\w+ar/; //\w+ means one or more word characters
+//  reg =/\Wharry/; // Capital W means no wor character
+//  reg =/\W+ar/; //\W+ means more than one non word characters
+//  reg=/number \d999/; //d means digit
+//  reg=/number \d+/; //d+ means more than one digit
+//  reg=/\D999/; //D means non digit
+//  reg=/\D+999/; //D+ means more than one non digit
+//  reg=/\ska number/; //Match whitespace character
+//  reg=/\s+ka number/; //Match one or more than one non whitespace character
+//  reg=/4r5r\b/; // Word boundary
+//  reg=/\h(?=y)/; //when y comes after h match found
+//  reg=/\h(?!y)/; //when y not comes after h match found
 
-// regex use
-let result=reg.exec(s);
-console.log('the result from exec is',result);
-if(reg.test(s)){
-    console.log(`the string ${s} matches the expression ${reg.source}`);
-}else{
-    console.log(`the string ${s} does not matches the expression ${reg.source}`)
+// // regex use
+// let result=reg.exec(s);
+// console.log('the result from exec is',result);
+// if(reg.test(s)){
+//     console.log(`the string ${s} matches the expression ${reg.source}`);
+// }else{
+//     console.log(`the string ${s} does not matches the expression ${reg.source}`)
+// }
+
+
+
+//Iterators
+// const myarray=['Apple','grapes','oranges','bhindi'];
+// console.log('my array is',myarray);
+
+// function fruitsIterator(values){
+//     let nextIndex=0;
+//     //we will return an object
+//     return{
+//         next:function(){
+//             if(nextIndex<values.length){
+//                 //we will return below object
+//                 return{
+//                     value: values[nextIndex++],
+//                     done:false
+//                 }
+//             }else{
+//                 // we will return below object with only done
+//                 return{
+//                     done : true
+//                 }
+//             }
+
+//         }
+//     }
+// }
+
+// //using the iterator
+// const fruits=fruitsIterator(myarray)
+// console.log(fruits.next())
+// console.log(fruits.next())
+// console.log(fruits.next())
+// console.log(fruits.next())
+// console.log(fruits.next())
+
+
+//Generators in js
+//1-1B
+
+function* numberGen() {
+    let i=0;
+    yield 1;
+    yield 2;
+    yield 3;
+    yield 4;
 }
-
-
-
-
+const gen=numberGen()
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
