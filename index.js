@@ -888,17 +888,23 @@ let s="this is great code with harry snd harry";
 // reg=/ha?rryi?/;// ? after character means that character is optioal
 // reg=/h\*ry/;// matches * as character
 
+//character Sets - we use []
 // reg=/h[a-z]ry/;// matches all characters to a to z
 // reg=/h[avz]ry/;// matches by given all characters
 // reg=/h[^avz]ry/;// not matches by given all characters others are ok
 
 
-//quatifiers: decide the repetation of character
-reg=/har{2}y/ //{n} means n time repetations
-reg=/har{0,2}y/ // means 0 to n time repetations
+//quatifiers: decide the repetation of character : we use {}
+// reg=/har{2}y/ //{n} means n time repetations
+// reg=/har{0,2}y/ // means 0 to n time repetations
 
 //grouping - we use paranthesis for groupings ()
-reg=/(har){2}/
+// reg=/(har){2}/
+
+
+// character classes
+ reg =/\war/; //word character - _or alphabet or numbers
+
 // regex use
 let result=reg.exec(s);
 console.log('the result from exec is',result);
