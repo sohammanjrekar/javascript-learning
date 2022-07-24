@@ -1069,16 +1069,16 @@ let s="this is great code with harry snd harry";
 
 // sets in javascript
 // set stores unique values
-const myset=new Set(); //initialize an empty set
-// console.log('the set is',myset);
+// const myset=new Set(); //initialize an empty set
+// // console.log('the set is',myset);
 
-// Adding values to this set
-myset.add('this');
-myset.add('or');
-myset.add('one');
-myset.add(25);
-myset.add(true);
-console.log('the set is',myset);
+// // Adding values to this set
+// myset.add('this');
+// myset.add('or');
+// myset.add('one');
+// myset.add(25);
+// myset.add(true);
+// console.log('the set is',myset);
 
 // in line one all
 // let myset2=new Set([1,45,'ao',true,{a:45,b:78},1])//repeat things not count
@@ -1100,9 +1100,13 @@ console.log('the set is',myset);
 // }
 
 
-myset.forEach((item)=>{
-    console.log('the item is',item);
-})
+// myset.forEach((item)=>{
+//     console.log('the item is',item);
+// })
 
 
+// Symbols in js
+const sym1=Symbol('my i');
+const sym2=Symbol('my i');
+console.log(sym1===sym2)
 
