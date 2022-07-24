@@ -985,30 +985,83 @@ let s="this is great code with harry snd harry";
 
 
 // for-in and for-of loops
-people=["h" ,"s","t"];
+// people=["h" ,"s","t"];
 
-//TRaditional for loop
+// //TRaditional for loop
 
-// for (let index = 0; index <people.length; index++) {
-//     const element =people[index];
-//     console.log(element);
+// // for (let index = 0; index <people.length; index++) {
+// //     const element =people[index];
+// //     console.log(element);
+// // }
+
+// obj={
+//     name:"soham",
+//     language:"js",
+//     hobbies:"criket"
+// }
+// //for short code use for in loop
+// //iteration an object using for in loop:
+// for(let key in obj){
+//     console.log(obj[key]);//key is string type also
 // }
 
-obj={
-    name:"soham",
-    language:"js",
-    hobbies:"criket"
-}
-//for short code use for in loop
-//iteration an object using for in loop:
-for(let key in obj){
-    console.log(obj[key]);//key is string type also
-}
+// //for of
 
-//for of
+// people=["h" ,"s","t"];
+// for(let name of people){
+//     console.log(name) //of direct give data /in gives index
+// }
 
-people=["h" ,"s","t"];
-for(let name of people){
-    console.log(name) //of direct give data /in gives index
-}
 
+
+//Maps in javascript : we can use any type of key or value
+
+const myMap= new Map();
+console.log(myMap);
+const key1='mystr',key2={},key3=function(){}
+
+//setting map values
+myMap.set(key1,'this is a string');
+myMap.set(key2,'this is a word');
+myMap.set(key3,'this is a char');
+console.log(myMap);
+
+//getting the values from a Map
+let value1=myMap.get(key1);
+console.log(value1);
+
+// //get the size of the map
+// console.log(myMap.size);
+
+// // you can loop using for..of to get keys and values
+// for(let [key,value] of myMap){
+//     console.log(key,value);
+// }
+// //get only keys
+// for(let key of myMap.keys()){
+//     console.log(key)
+// }
+
+// // get only values
+// for(let key of myMap.values()){
+//     console.log(key)
+// }
+
+// //you can loop through a map using for loop
+// myMap.forEach((value,key)=>{
+//     console.log('key is',key);
+//     console.log('value is',value);
+// })
+
+//converting map to an array
+let myArray=Array.from(myMap);
+console.log('array is',myArray);
+
+
+//converting map keys to an array
+let mykeyArray=Array.from(myMap.keys());
+console.log('array is',mykeyArray);
+
+//converting map values to an array
+let myvaluesArray=Array.from(myMap.values());
+console.log('array is',myvaluesArray);
