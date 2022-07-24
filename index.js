@@ -966,19 +966,49 @@ let s="this is great code with harry snd harry";
 //Generators in js
 //1-1B
 
-function* numberGen() {
-    let i=0;
-    // yield 1;
-    // yield 2;
-    // yield 3;
-    // yield 4;
-    while (true) {
-        yield i++;
-    }
+// function* numberGen() {
+//     let i=0;
+//     // yield 1;
+//     // yield 2;
+//     // yield 3;
+//     // yield 4;
+//     while (true) {
+//         yield i++;
+//     }
+// }
+// const gen=numberGen()
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+
+
+// for-in and for-of loops
+people=["h" ,"s","t"];
+
+//TRaditional for loop
+
+// for (let index = 0; index <people.length; index++) {
+//     const element =people[index];
+//     console.log(element);
+// }
+
+obj={
+    name:"soham",
+    language:"js",
+    hobbies:"criket"
 }
-const gen=numberGen()
-console.log(gen.next());
-console.log(gen.next());
-console.log(gen.next());
-console.log(gen.next());
-console.log(gen.next());
+//for short code use for in loop
+//iteration an object using for in loop:
+for(let key in obj){
+    console.log(obj[key]);//key is string type also
+}
+
+//for of
+
+people=["h" ,"s","t"];
+for(let name of people){
+    console.log(name) //of direct give data /in gives index
+}
+
